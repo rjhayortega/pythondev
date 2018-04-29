@@ -2,7 +2,7 @@
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
-$html = "<img src=http://app.knackmap.com/pdev/0185722b563d116680ee8b42f365f4d8.png></img><b></br></br>Welcome to our Knackmap Family!</b></br></br>Hello [Ronald],</br></br>Thanks for subscribing to our [package name] plan, you can now get started on our platform!</br></br>Please use below credentials to get into our platform:</br></br><b>Username:</b> [rjhayortega@mail.com]</br><b>Password:</b> [po2developers]</br></br>Our friendly team are only a live chat or email away, so don't hesitate to get in touch!Our Customer Service lead Dolly will be in touch with you at some point soon to check up and make sure that you are going well on our platform 🙂Thanks,</br></br><p style=\"border-radius: 50px; overflow: hidden; width: 100px; height: 100px; padding: 0px; border: 1px solid rgb(204, 204, 204);\"><img src=\"https://knackmap.com/wp-content/uploads/2018/02/josh.jpg\" style=\"width: 100%; height: auto; position: relative; top: 10px; left: -5px;\"></p>";
+$html = "<img src=http://app.knackmap.com/pdev/0185722b563d116680ee8b42f365f4d8.png></img><b></br></br>Welcome to our Knackmap Family!</b></br></br>Hello [Ronald],</br></br>Thanks for subscribing to our [package name] plan, you can now get started on our platform!</br></br>";
 
 
  $localhost = 'knackmap-app.clyo0qp5f5mz.us-west-2.rds.amazonaws.com';
