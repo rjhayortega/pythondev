@@ -22,8 +22,8 @@ echo "Connected successfully";
 $sql = "desc knack_email_template";
 $result = $conn->query($sql);
 while($row = $result->fetch_assoc()){
-//    var_dump($row);
-//	echo"<br>";
+    var_dump($row);
+	echo"<br>";
 }
 
 echo $html;
@@ -38,7 +38,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-     echo $row["template"];
+    // echo $row["template"];
     }
 } else {
    // echo "0 results";
@@ -50,9 +50,9 @@ if ($result->num_rows > 0) {
 
 
 $sql1 = "update knack_email_template set template='".$html."' where id>0";
-$result1 = $conn->query($sql1);
+//$result1 = $conn->query($sql1);
 
-echo ">>>>".$result1;
+//echo ">>>>".$result1;
 
 
 $conn->close();
