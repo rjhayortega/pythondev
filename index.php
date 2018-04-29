@@ -591,7 +591,7 @@ switch($type)
 			}
 			else
 			{
-				header('location:dashboard.php');
+				//header('location:dashboard.php');
 			}
 			
 		}
