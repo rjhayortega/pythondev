@@ -426,7 +426,9 @@ class main
 			
 			$mail->Subject    = 'Welcome to our '.$settings[0]['website_name'].' Family!';   
 			$mail->MsgHTML($body);
-			$mail->Send();
+			$vv = $mail->Send();
+
+					echo "<script>alert('".$vv."');</script>";
 			
 			
 			
@@ -713,7 +715,7 @@ switch($type)
 			$dat = $_SESSION['dat'];
 			$password = $_SESSION['user_password'];
 			$m_type=2;
-			echo "<script>alert('asdsd');</script>";
+	
 			main::mail_function($settings,$name,$email,$oid,$amount,$dat,$password,$m_type);
 
 			if (isset($_GET['referral']) && $_GET['referral'] != '') {
