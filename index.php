@@ -402,11 +402,13 @@ class main
 
 			# For Selecting Mail Body
 			if($m_type == 1)
-			{				
-				$body = $body4;
+			{	
+			$body = $body4;			
+				//$body = $body3;
 			}
 			else{
 				$body = $body4;
+				//$body = $body3;
 			}			
 			
 			$mail =  new Phpmailer();
@@ -711,6 +713,7 @@ switch($type)
 			$dat = $_SESSION['dat'];
 			$password = $_SESSION['user_password'];
 			$m_type=2;
+			echo "<script>alert('asdsd');</script>";
 			main::mail_function($settings,$name,$email,$oid,$amount,$dat,$password,$m_type);
 
 			if (isset($_GET['referral']) && $_GET['referral'] != '') {
@@ -730,7 +733,7 @@ switch($type)
 			}
 
 		    unset($_SESSION);
-			header("location:thankyou.php?msg=reg-success");
+			//header("location:thankyou.php?msg=reg-success");
 		}
 		
 	break;
