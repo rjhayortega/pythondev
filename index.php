@@ -411,7 +411,7 @@ class main
           <tr>
             <td colspan="2"><p style="color:#fff; text-align:center; font-size:22px; color:#333;"><strong>Welcome to our Knackmap Family!</strong>
             <p>Hello'.$name.',</p>
-            <p>Thanks for subscribing to our .</p>
+            <p>Thanks for subscribing to our '.$_SESSION["plan"].'.</p>
             <p>, you can now get started on our platform!<</p>            
             <br>                          
                 Please use below credentials to get into our platform:</br></br>
