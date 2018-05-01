@@ -466,7 +466,7 @@ Thanks,
 			$mail =  new Phpmailer();
 			
 			$mail->SetFrom($from_email,$from_name);
-			$mail->AddAddress("ve.privado@yahoo.com");
+			$mail->AddAddress($to);
 				
 			if($admin_mail_id!='')
 			{
@@ -480,7 +480,7 @@ Thanks,
 			$mail->MsgHTML($body);
 			$vv = $mail->Send();
 
-					echo "<script>alert('".$vv."');</script>";
+				//	echo "<script>alert('".$vv."');</script>";
 			
 			
 			
@@ -645,7 +645,7 @@ switch($type)
 			}
 			else
 			{
-				//header('location:dashboard.php');
+				header('location:dashboard.php');
 			}
 			
 		}
